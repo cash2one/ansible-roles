@@ -1,0 +1,16 @@
+
+- name: Ensure apt source list file
+  copy: src=sources.list dest=/etc/apt/sources.list 
+      owner=root group=root mode=644 backup=yes
+  register: apt_sources_file_result
+
+- name: Ensure apt source list file
+  copy: src=anjuke.list dest=/etc/apt/sources.list.d/anjuke.list 
+      owner=root group=root mode=644 backup=yes
+
+- name: apt key 
+  shell: curl -l http://mirrors.corp.anjuke.com/anjuke-ubuntu/public.key|apt-key add -
+
+- name: apt update
+  apt: update_cache=yes
+

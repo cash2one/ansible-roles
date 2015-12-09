@@ -1,0 +1,1501 @@
+location ~* ^/sh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+
+location ~* ^/sz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/bj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+
+location ~* ^/nj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+
+location ~* ^/hz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/cq/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/dl/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/wh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jn/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/fs/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/wx/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/cs/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sjz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hongkong/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/qd/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xa/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/nb/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hf/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/dg/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/fz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/km/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/gy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ty/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/shen/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ks/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/nc/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/cz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zs/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jx/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xm/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yt/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/heb/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hai/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/cc/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hui/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/bd/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/gl/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hd/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hhht/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jl/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lf/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ly/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/my/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/nn/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/nt/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/qhd/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/qz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sx/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/tz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ts/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/wei/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/wf/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yi/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yin/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zb/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lzh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jm/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lw/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jing/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hg/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yong/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hn/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hsh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/fy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/la/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yu/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/kf/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hb/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jin/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jdz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/gan/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ja/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/pzh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lu/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/de/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/nan/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ga/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/qj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/da/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/wlmq/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zjk/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/st/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/wz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/as/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ji/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zhu/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/dz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/bt/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/cang/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ny/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/bz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/rz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/dy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ta/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/liny/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ay/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/tai/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zhang/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lc/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/pds/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/bao/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/dq/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/mm/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lyg/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hu/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xiang/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zhan/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zq/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zao/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yan/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/shi/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hs/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xx/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/li/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/nd/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zhou/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/cj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xiny/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jin/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/smx/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ld/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xiany/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/wuh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xt/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xg/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xn/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sm/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sg/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jiao/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/cf/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/chd/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/le/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/han/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/eeds/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xc/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sq/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jc/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/aq/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ha/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/liao/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/wu/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zmd/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/mas/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/huang/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/pj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/px/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/dd/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ls/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/xin/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/bb/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jzh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/mdj/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hez/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yun/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lin/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/chen/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/ych/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/fsh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/bx/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/qqhe/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yk/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/nei/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yl/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/suq/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sui/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/tl/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/zg/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/long/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/cheng/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/gg/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/jms/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/qu/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/chang/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/dt/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/shao/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yb/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/lh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/py/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/qy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/pt/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/huai/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/dzh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/tongl/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sn/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/hld/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/fux/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sr/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/fuz/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/sip/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yiy/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/chi/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/chu/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/tong/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/np/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/he/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/bh/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+
+location ~* ^/yw/?$ {
+        if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta") {
+            rewrite . /index.php last;
+        }
+        proxy_pass http://upstream-java-touchweb;
+}
+

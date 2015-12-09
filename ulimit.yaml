@@ -1,0 +1,12 @@
+
+- hosts: all
+  sudo: yes
+  tasks:
+    - name: ensure /etc/security/limits.conf
+      copy: src=files/limits.conf dest=/etc/security/limits.conf owner=root group=root mode=644
+
+    - name: ensure /etc/pam.d/su
+      copy: src=files/su  dest=/etc/pam.d/su owner=root group=root mode=644
+
+    - name: ensure /etc/profile.d/ulimit.sh
+      copy: src=files/ulimit.sh dest=/etc/profile.d/ulimit.sh owner=root group=root mode=644 

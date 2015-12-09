@@ -1,0 +1,14 @@
+# binary packages
+deb http://10.10.3.224/anjuke-ubuntu precise main multiverse restricted universe
+deb http://10.10.3.224/anjuke-ubuntu precise-updates main multiverse restricted universe
+deb http://10.10.3.224/anjuke-ubuntu precise-proposed main multiverse restricted universe
+deb http://10.10.3.224/anjuke-ubuntu precise-backports main multiverse restricted universe
+deb http://10.10.3.224/anjuke-ubuntu precise-security  main multiverse restricted universe
+deb http://10.10.3.224/anjuke-ubuntu-anjuke-test precise main multiverse restricted universe
+# # sources
+# deb-src http://10.10.3.224/ubuntu precise main multiverse restricted universe
+# deb-src http://10.10.3.224/ubuntu precise-updates main multiverse restricted universe
+# deb-src http://10.10.3.224/ubuntu precise-proposed main multiverse restricted universe
+# deb-src http://10.10.3.224/ubuntu precise-backports main multiverse restricted universe
+# deb-src http://10.10.3.224/ubuntu precise-security  main multiverse restricted universe
+#deb http://10.10.3.224/rsyslog  precise main

@@ -1,0 +1,30 @@
+- hosts: all
+ #  sudo: yes
+ #  sudo_user: evans
+  remote_user: evans
+  tasks:
+#   - name: copy
+#     copy: src=files/logstash/grok-patterns  dest=/usr/local/logstash/patterns/grok-patterns
+#   - name: copy access_log.conf
+#     copy: src=files/logstash/access_log.conf  dest=/usr/local/logstash/etc/ 
+#   - name: copy syslog.conf
+#     copy: src=files/logstash/syslog.conf  dest=/usr/local/logstash/etc/
+#
+#   - name: kill  logstash
+#     shell: kill `ps -ef |grep "logstash"|grep -v "grep"|awk '{print $2}'`
+#   - name: kill syslog.conf
+#     shell: kill `ps -ef |grep "syslog.conf"|grep -v "grep"|awk '{print $2}'`
+   - name: start syslog.conf
+     shell: nohup bash /usr/local/logstash/bin/logstash agent -f /usr/local/logstash/etc/syslog.conf > /dev/null 2>&1 &
+#     shell: nohup bash /usr/local/logstash/bin/logstash agent -f /usr/local/logstash/etc/syslog.conf > /tmp/asd 2>&1 &
+
+
+- hosts: web
+  remote_user: evans
+  tasks:
+###   - name: copy access_log.conf
+###     copy: src=files/logstash/access_log.conf  dest=/usr/local/logstash/etc/ 
+#   - name: kill access_log.conf
+#     shell: kill -9 `ps -ef |grep "access_log.conf"|grep -v "grep"|awk '{print $2}'`
+   - name: start accesslog.conf
+     shell: nohup bash /usr/local/logstash/bin/logstash agent -f /usr/local/logstash/etc/access_log.conf > /dev/null 2>&1 &

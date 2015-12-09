@@ -1,0 +1,10 @@
+---
+# Main Play webapp deployment playbook
+
+- hosts: all 
+  sudo: yes
+  roles:
+     - role: common
+
+  handlers:
+    - include: handlers/main.yaml

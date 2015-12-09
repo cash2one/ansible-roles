@@ -1,0 +1,6 @@
+
+- name: ensure nginx started
+  service: name=nginx state=started
+
+- name: ensure php-fpm stared
+  service: name=php-fpm state=started

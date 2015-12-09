@@ -1,0 +1,74 @@
+#- include: apt_package.yaml pkg='anjuke-nginx'
+- name: Ensure nginx logrotate installed
+  copy: src=nginx.logrotate dest=/etc/logrotate.d/nginx mode=644 owner=root group=root
+- name: copy nginx.conf
+  template: src=nginx.conf dest=/etc/nginx/nginx.conf mode=644 owner=root group=root
+- name: copy fastcgi.conf
+  copy: src=nginx/fastcgi.conf dest=/etc/nginx/fastcgi.conf mode=644 owner=root group=root
+- name: copy fastcgi_params
+  copy: src=nginx/fastcgi_params dest=/etc/nginx/fastcgi_params mode=644 owner=root group=root
+- name: copy mime.types
+  copy: src=nginx/mime.types dest=/etc/nginx/mime.types mode=644 owner=root group=root
+- name: copy koi-utf
+  copy: src=nginx/koi-utf dest=/etc/nginx/koi-utf mode=644 owner=root group=root
+- name: copy koi-win
+  copy: src=nginx/koi-win dest=/etc/nginx/koi-win mode=644 owner=root group=root
+- name: copy scgi_params
+  copy: src=nginx/scgi_params dest=/etc/nginx/scgi_params mode=644 owner=root group=root
+- name: copy uwsgi_params
+  copy: src=nginx/uwsgi_params dest=/etc/nginx/uwsgi_params mode=644 owner=root group=root
+- name: copy win-utf
+  copy: src=nginx/win-utf dest=/etc/nginx/win-utf mode=644 owner=root group=root
+- name: Ensure access.log readable
+  file: path=/data1/logs/nginx/access.log owner=nobody group=root mode=644 state=touch
+- name: Ensure error.log readable
+  file: path=/data1/logs/nginx/error.log owner=nobody group=root mode=644 state=touch
+
+#- include: apt_package.yaml pkg='libgmp10'
+#- include: apt_package.yaml pkg='anjuke-php-fpm'
+#- name: copy php-fpm.conf
+#  template: src=php-fpm.conf dest=/usr/local/anjuek-php-fpm/etc/php-fpm.conf  mode=644 owner=root group=root
+- name: copy php-info.php
+  template: src=info.php dest=/usr/local/anjuke-php-fpm/var/www/info.php  mode=644 owner=root group=root
+#- name: copy php-fpm init.d
+#  copy: src=init.d/php-fpm dest=/etc/init.d/anjuke-php-fpm mode=755 owner=root group=root
+#- name: Ensure php-fpm logrotate installed
+#  copy: src=php-fpm.logrotate dest=/etc/logrotate.d/php-fpm mode=644 owner=root group=root
+#- name: Ensure php-fpm.log readable
+#  file: path=/data1/logs/php-fpm/php-fpm.log owner=root group=root mode=644 state=touch
+#- name: Ensure www.slow.log readable
+#  file: path=/data1/logs/php-fpm/www.slow.log owner=root group=root mode=644 state=touch
+#
+#- include: apt_package.yaml pkg='anjuke-zeromq'
+#- include: apt_package.yaml pkg='anjuke-rabbitmq-c'
+#- include: apt_package.yaml pkg='anjuke-php-amqp'
+#- include: apt_package.yaml pkg='anjuke-php-amqp-0.2'
+#- include: apt_package.yaml pkg='anjuke-php-apc'
+#- name: copy apc.ini
+#  copy: src=apc.ini dest=/etc/php-fpm/conf.d/ mode=644 owner=root group=root
+#- include: apt_package.yaml pkg='anjuke-php-dbase'
+#- include: apt_package.yaml pkg='anjuke-php-hzmmseg'
+#- include: apt_package.yaml pkg='anjuke-php-memcache'
+#- name: copy memcache.ini
+#  copy: src=memcache.ini dest=/etc/php-fpm/conf.d/ mode=644 owner=root group=root
+#- include: apt_package.yaml pkg='anjuke-php-mongo'
+#- include: apt_package.yaml pkg='anjuke-php-msgpack'
+#- include: apt_package.yaml pkg='anjuke-php-redis'
+#- include: apt_package.yaml pkg='anjuke-php-uuid'
+#- include: apt_package.yaml pkg='anjuke-php-xhprof'
+#- include: apt_package.yaml pkg='anjuke-php-zmq'
+#- include: apt_package.yaml pkg='anjuke-php-opcache'
+#- name: cp amqp.so 
+#  shell: cp /usr/local/php-fpm/lib/php/extensions/no-debug-non-zts-20090626/amqp.so /usr/local/php-fpm/lib/php/extensions/no-debug-non-zts-20090626/amqp-1.2.0.so
+
+#- name: copy opcache-disable.ini
+#  copy: src=opcache-disable.ini dest=/etc/php-fpm/conf.d/opcache.ini mode=644 owner=root group=root
+#  when: opcache_disable == 1 
+#  tags: opcache
+#  notify: restart php-fpm
+
+- name: install dct
+  include: apt_package.yaml pkg='ajk-dctagent'
+
+- name: chown www
+  shell: chown evans:www-data -R /home/www/

@@ -1,0 +1,117 @@
+#!/bin/bash
+#
+# chkconfig: 2345 91 89
+# description: anjuke php fpm
+#
+
+pidfile="/data1/logs/php-fpm/php-fpm.pid"
+
+pid=`cat $pidfile 2>/dev/null`
+sbin_path="/usr/local/php-fpm/sbin/php-fpm"
+
+RETVAL=0
+
+function is_process_killed(){
+    count=$1
+    pid=$2
+    while [ $count -gt 0 ];
+    do
+        kill -0 $pid
+
+        if [ $? -ne 0 ];then
+            echo -n "killing $pid at ";date
+            sleep 1
+        else
+            echo -n "killed $pid at ";date
+            break;
+        fi
+        count=`expr $count - 1`
+    done
+    return $count;
+}
+
+
+function check() {
+    evans_exec $sbin_path -t
+    return $?
+}
+
+function evans_exec(){
+    exec_command=$@
+    user=`whoami`
+    if [ "$user" = "root" ];then
+        su evans -c "$exec_command"
+    else
+        $exec_command
+    fi
+    return $?
+}
+
+function start() {
+    evans_exec $sbin_path
+
+    RETVAL=$?
+    if [ $RETVAL -ne 0 ];then
+        echo -n "start error"
+    else
+        echo -n "started at ";date
+    fi
+}
+
+function stop() {
+    # check pid is php-fpm
+    pidok='no'
+    if [ ! -z "$pid" ];then
+        commendline=`ps -p $pid -o command | tail -n1`
+        echo $commendline | grep -qE 'php-fpm'
+        if [ $? -eq 0 ];then
+            pidok='ok'
+        else 
+            echo "pid exists but not php-fpm process"
+        fi
+    fi
+    
+
+    if [ $pidok = 'ok' ];then
+        kill $pid
+        is_process_killed 10 $pid
+        if [ $? -eq 0 ];then
+            kill -9 $pid    
+            echo "force kill failed ,please check manual"
+        fi
+        sleep 1
+    else 
+        pkill -9 -f 'php-fpm: master process'
+        pkill -9 -f 'php-fpm: pool'
+        echo "use force pkill ,plsease check manual"
+    fi
+}
+
+
+case "$1" in
+    configtest)
+        check
+        RETVAL=$?
+        ;;
+    start)
+        check && start
+        RETVAL=$?
+        ;;
+    stop)
+        check && stop
+        RETVAL=$?
+        ;;
+    restart|reload)
+        check && stop && start
+        RETVAL=$?
+        ;;
+    status)
+        . /lib/lsb/init-functions
+        status_of_proc -p "$pidfile" "$sbin_path" php-fpm && exit 0 || exit $?
+        ;;
+    *)
+        echo $"Usage: $0 {configtest|start|stop|restart}"
+        RETVAL=3
+esac
+
+exit $RETVAL

@@ -1,0 +1,15 @@
+
+- include: ../../../tasks/php-service.yaml
+
+- name: ensure {{nginx_confd_path}} exist
+  file: path={{nginx_confd_path}} state=directory owner=evans group=www-data mode=755
+
+- name: nginx yezhu configure File
+  template: src=d.anjuke.com.conf  dest={{nginx_confd_path}}d.anjuke.com.conf
+         owner=evans group=www-data mode=644
+  notify: restart nginx
+
+- name: nginx yezhu api configure File
+  template: src=api.anjuke.com.conf  dest={{nginx_confd_path}}api.anjuke.com.conf
+         owner=evans group=www-data mode=644
+  notify: restart nginx

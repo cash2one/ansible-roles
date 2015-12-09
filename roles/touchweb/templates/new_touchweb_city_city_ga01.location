@@ -1,0 +1,193 @@
+
+location ~* ^/cy/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ank/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/yx/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/qin/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/shz/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/zi/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/yili/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/liang/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/bygl/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ms/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/qing/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/chao/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/xuan/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ba/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/hong/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/sd/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/zk/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/suz/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/zhq/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/song/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/yq/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ka/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/tian/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/es/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/shuy/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/yanan/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/guang/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/lps/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/mz/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ans/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/jq/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/bycem/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/wn/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/szs/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/zjj/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/suiz/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ez/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/boz/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/hami/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/xiann/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/wuhai/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ying/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ws/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/cx/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/ch/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/klmy/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/xam/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/wuwei/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/yanb/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/jixi/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/jiy/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/th/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/xinyu/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/shuo/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/wlcb/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/by/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/sw/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/bc/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/heg/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/liaoy/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/zc/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/pe/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/hlbe/?$ {
+        rewrite . /index.php last;
+}
+location ~* ^/yf/?$ {
+        rewrite . /index.php last;
+}

@@ -1,0 +1,27 @@
+deb http://10.10.3.224/ubuntu/ precise main restricted
+deb-src http://10.10.3.224/ubuntu/ precise main restricted
+
+deb http://10.10.3.224/ubuntu/ precise-updates main restricted
+deb-src http://10.10.3.224/ubuntu/ precise-updates main restricted
+
+deb http://10.10.3.224/ubuntu/ precise universe
+deb-src http://10.10.3.224/ubuntu/ precise universe
+deb http://10.10.3.224/ubuntu/ precise-updates universe
+deb-src http://10.10.3.224/ubuntu/ precise-updates universe
+
+deb http://10.10.3.224/ubuntu/ precise multiverse
+deb-src http://10.10.3.224/ubuntu/ precise multiverse
+deb http://10.10.3.224/ubuntu/ precise-updates multiverse
+deb-src http://10.10.3.224/ubuntu/ precise-updates multiverse
+
+deb http://10.10.3.224/ubuntu/ precise-backports main restricted universe multiverse
+deb-src http://10.10.3.224/ubuntu/ precise-backports main restricted universe multiverse
+
+deb http://10.10.3.224/security/ precise-security main restricted
+deb-src http://10.10.3.224/security/ precise-security main restricted
+deb http://10.10.3.224/security/ precise-security universe
+deb-src http://10.10.3.224/security/ precise-security universe
+deb http://10.10.3.224/security/ precise-security multiverse
+deb-src http://10.10.3.224/security/ precise-security multiverse
+
+deb http://10.10.3.224/anjuke/  precise main

@@ -1,0 +1,80 @@
+- hosts: all
+  sudo: yes 
+  sudo_user: root
+  tasks:
+    - name: ensure ntp cron job
+      cron: name="ntp" hour="0/1" minute="0" job="/usr/sbin/ntpdate 10.10.6.130 && hwclock -w" state=absent
+
+    - name: ensure ntp cron job
+      cron: name="time update" hour="*/1" minute="0" job="/usr/sbin/ntpdate 10.10.6.130 && hwclock -w"
+
+    - name: Ensure sudo group exists
+      group: name=sudo state=present
+
+    - name: set /etc/sudoers file
+      copy: src=files/sudoers  dest=/etc/sudoers 
+            owner=root group=root mode=440
+
+#    - include: tasks/user.yaml user=feidong
+#    - include: tasks/user.yaml user=wbsong
+#    - include: tasks/user.yaml user=zhiwensun
+
+    - include: tasks/evans.yaml
+
+    - stat: path=/data1
+      register: data1_result
+
+    - stat: path=/datastores
+      register: datastores_result
+
+    - name: link /data1 to /datastores
+      when: (not data1_result.stat.exists) and datastores_result.stat.exists
+      file: src=/datastores dest=/data1 state=link
+   
+    - name: create /data1
+      when: (not data1_result.stat.exists) and (not datastores_result.stat.exists)
+      file: path=/data1/ owner=evans group=www-data state=directory
+   
+    - name: ensure /data1 owner is evans
+      file: path=/data1/ owner=evans group=www-data
+
+    - name: esnure rsyslog file exist
+      copy: src=files/rsyslog.conf dest=/etc/rsyslog.conf owner=root group=root mode=644
+
+    - name: esnure resolv.conf
+      copy: src=files/resolv.conf dest=/etc/resolv.conf owner=root group=root
+
+    - name: esnure rsyslog.d/50-default.conf file exist
+      copy: src=files/rsyslog.d/50-default.conf dest=/etc/rsyslog.d/50-default.conf owner=root group=root mode=644
+      notify: restart rsyslog
+  
+    - name: ensure /var/log/syslog mode 644
+      file: path=/var/log/syslog mode=644 owner=syslog group=adm
+    
+    - name: Ensure python installed
+      apt: package=python state=present
+
+    - name: add key
+      shell: curl -l http://mirrors.corp.anjuke.com/anjuke-ubuntu/public.key|apt-key add -
+
+    - name: Ensure python-pycurl installed
+      apt: package=python-pycurl state=present
+
+    - name: Ensure keychain installed
+      apt: package=keychain state=present
+
+    - name: Add an Apt key of app10-089
+      apt_key: url=http://app10-089.i.ajkdns.com/anjuke.key state=present
+
+    - name: Ensure app10-089 apt repo
+      apt_repository: repo='deb http://app10-089.i.ajkdns.com precise main' state=present update_cache=true
+
+    - name: sync /usr/share/fonts/
+      synchronize: src=/usr/share/fonts dest=/usr/share/
+      tags: fonts
+
+  handlers:
+    - name: restart rsyslog
+      service: name=rsyslog state=restarted
+
+

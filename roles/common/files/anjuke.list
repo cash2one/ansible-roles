@@ -1,0 +1,6 @@
+#deb http://10.10.3.224/anjuke-ubuntu precise main universe
+
+deb http://10.10.3.224/anjuke trusty main
+deb http://10.10.3.224/anjuke-ubuntu trusty main
+deb http://10.10.3.224/ubuntu-anjuke-test trusty main
+deb http://10.10.3.224/ubuntu-anjuke-test trusty main

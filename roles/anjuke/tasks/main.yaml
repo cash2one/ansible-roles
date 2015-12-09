@@ -1,0 +1,16 @@
+
+- include: ../../../tasks/php-service.yaml
+
+- name: ensure {{nginx_confd_path}} exist
+  file: path={{nginx_confd_path}} state=directory owner=evans group=www-data mode=755
+
+- name: nginx config file
+  template: src=anjuke.com.conf dest={{nginx_confd_path}}anjuke.com.conf
+         owner=evans group=www-data mode=644
+  notify: restart nginx
+
+- name: chat nginx config file
+  template: src=chat.anjuke.com.conf dest={{nginx_confd_path}}chat.anjuke.com.conf
+         owner=evans group=www-data mode=644
+  notify: restart nginx
+

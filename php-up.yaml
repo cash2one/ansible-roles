@@ -1,0 +1,79 @@
+- hosts: all
+  sudo: yes
+  sudo_user: root
+  tasks:
+#   - name: kill php-fpm for php5.3
+#     shell: kill `cat /data1/logs/php-fpm/php-fpm.pid`
+#
+   - name: remove old so
+     apt: name={{item}} state=absent
+     with_items:
+       - anjuke-php-fpm
+       - anjuke-php-amqp
+       - anjuke-php-memcache
+       - anjuke-php-solr
+       - anjuke-php-hzmmseg
+
+#   - name: cp anjuke.list 
+#     copy: src=files/anjuke.list dest=/etc/apt/sources.list.d/anjuke.list owner=root group=root
+#
+#   - name: cp sources.list 
+#     copy: src=files/sources.list dest=/etc/apt/sources.list owner=root group=root
+#
+#   - name: add key 
+#     shell: curl -l http://mirrors.corp.anjuke.com/anjuke-ubuntu/public.key|apt-key add -
+#
+   - name: apt-get update
+     shell: apt-get update
+
+   - name: install common software
+     apt: name={{item}} state=present force=yes
+     with_items:
+       - anjuke-php-fpm
+       - anjuke-php-amqp
+       - anjuke-php-memcache
+       - anjuke-php-msgpack=0.5.5.2
+       - anjuke-php-redis=2.2.5.2
+       - anjuke-php-solr
+       - anjuke-php-zmq=1.1.2.2
+       - anjuke-php-hzmmseg
+
+   - name: cp hzmmseg.so
+     copy: src=files/hzmmseg.so dest=/usr/local/anjuke-php-fpm/lib/php/extensions/no-debug-non-zts-20121212/hzmmseg.so owner=root group=root
+
+   - name: cp php
+     copy: src=files/php dest=/usr/local/anjuke-php-fpm/bin/php owner=root group=root
+
+   - name: cp php-fpm
+     copy: src=files/php-fpm dest=/usr/local/anjuke-php-fpm/sbin/php-fpm owner=root group=root
+
+   - name: cp php.ini 
+     copy: src=files/php.ini dest=/usr/local/anjuke-php-fpm/etc/php.ini owner=root group=root
+
+   - name: cp php-fpm.conf 
+     copy: src=files/php-fpm.conf dest=/usr/local/anjuke-php-fpm/etc/php-fpm.conf owner=root group=root
+
+   - name: cp amqp.ini
+     copy: src=files/amqp.ini dest=/usr/local/anjuke-php-fpm/etc/conf.d/amqp.ini owner=root group=root
+
+   - name: cp amqp-1.2.so
+     shell: cp /usr/local/anjuke-php-fpm/lib/php/extensions/no-debug-non-zts-20121212/amqp.so /usr/local/anjuke-php-fpm/lib/php/extensions/no-debug-non-zts-20121212/amqp-1.2.so
+
+   - name: cp amqp-1.2.0.so
+     shell: cp /usr/local/anjuke-php-fpm/lib/php/extensions/no-debug-non-zts-20121212/amqp.so /usr/local/anjuke-php-fpm/lib/php/extensions/no-debug-non-zts-20121212/amqp-1.2.0.so
+
+   - name: ensure /data1/logs/anjuke-php-fpm/
+     file: path=/data1/logs/anjuke-php-fpm/ owner=evans group=www-data state=directory
+
+   - name: Ensure anjuke-php-fpm logrotate installed
+     copy: src=files/anjuke-php-fpm.logrotate dest=/etc/logrotate.d/php-fpm mode=644 owner=root group=root
+
+   - name: delete php-fpm logrotate
+     shell: rm -rf /etc/logrotate.d/php-fpm
+
+   - name: cp opcache.ini
+     copy: src=files/opcache.ini dest=/usr/local/anjuke-php-fpm/etc/conf.d/opcache.ini owner=root group=root
+
+   - name: start fpm for php5.5
+     service: name=anjuke-php-fpm state=restarted
+

@@ -1,0 +1,28 @@
+---
+- hosts: "anjuke-city"
+  vars_files:
+    - /home/www/userops/ansible-env/env_var.yaml
+  roles:
+    - role: include
+    - role: user
+    - role: anjuke
+    - role: pages
+    - role: site-api
+  handlers:
+    - include: handlers/main.yaml
+
+- hosts: "haozu-jinpu"
+  vars_files:
+    - /home/www/userops/ansible-env/env_var.yaml
+  roles:
+    - role: include
+    - role: user
+    - role: anjuke-jp
+    - role: anjuke-zu
+    - role: anjuke
+    - role: pages
+    - role: touchweb
+    - role: yezhu 
+    - role: member
+  handlers:
+    - include: handlers/main.yaml

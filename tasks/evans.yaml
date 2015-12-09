@@ -1,0 +1,55 @@
+
+
+- name: Ensure user evans exist
+  user: name=evans group=www-data shell=/bin/bash home=/home/www
+
+- name: ensure /home/www/ created
+  file: path=/home/www/ owner=evans group=www-data state=directory mode=0755
+
+- name: ensure /home/www/.ssh created
+  file: path=/home/www/.ssh owner=evans group=www-data state=directory mode=0700
+
+- name: ensure id_dsa copy
+  copy: src=/home/www/.ssh/id_dsa dest=/home/www/.ssh/ mode=600 owner=evans group=www-data
+
+- name: ensure authorized_keys copy
+  copy: src=evans_authorized_keys dest=/home/www/.ssh/authorized_keys force=no mode=600 owner=evans group=www-data
+
+- name: ensure id_dsa.pub copy
+  copy: src=evans_authorized_keys dest=/home/www/.ssh/id_dsa.pub mode=600 owner=evans group=www-data
+
+- name: ensure .bashrc
+  copy: src=.bashrc dest=/home/www/ mode=600 owner=evans group=www-data
+
+- name: ensure .profile
+  copy: src=.profile dest=/home/www/ mode=600 owner=evans group=www-data
+
+- name: ensure vimrc.local
+  copy: src=vimrc.local dest=/etc/vim/ mode=755 owner=root group=root
+
+- name: ensure /home/www/.keychain
+  file: path=/home/www/.keychain owner=evans group=www-data state=directory mode=0700
+
+- name: ensure /home/www/config/machine/
+  file: path=/home/www/config/machine/ owner=evans group=www-data state=directory
+
+- name: ensure /home/www/conf/
+  file: path=/home/www/conf/ owner=evans group=www-data state=directory
+
+- name: ensure /home/www/user/nginx/conf.d/
+  file: path=/home/www/user/nginx/conf.d/ owner=evans group=www-data state=directory
+
+- name: ensure /home/www/v2
+  file: path=/home/www/v2 owner=evans group=www-data state=directory
+
+- name: ensure /home/www/config/v2
+  file: path=/home/www/config/v2 owner=evans group=www-data state=directory
+
+- name: ensure /home/www/user/usersite
+  file: path=/home/www/user/usersite owner=evans group=www-data state=directory
+
+- name: ensure /home/www/user/sublessor
+  file: path=/home/www/user/sublessor owner=evans group=www-data state=directory
+
+- name: Ensure MACHINE_NAME exists
+  template: src=MACHINE_NAME dest=/home/www/conf/MACHINE_NAME owner=evans group=www-data mode=644

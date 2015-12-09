@@ -1,0 +1,10 @@
+
+- include: ../../../tasks/php-service.yaml
+
+- name: ensure {{nginx_confd_path}} exist
+  file: path={{nginx_confd_path}} state=directory owner=evans group=www-data mode=755
+
+- name: nginx site-api configure   file
+  template: src=site-api.a.ajkdns.com.conf  dest={{nginx_confd_path}}site-api.a.ajkdns.com.conf
+         owner=evans group=www-data mode=644
+  notify: restart nginx

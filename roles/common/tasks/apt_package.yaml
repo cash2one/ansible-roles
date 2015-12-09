@@ -1,0 +1,4 @@
+
+- name: Ensure {{pkg}} installed
+  apt: package={{pkg}} state=latest 
+

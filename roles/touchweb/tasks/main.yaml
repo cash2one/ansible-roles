@@ -1,0 +1,15 @@
+
+- include: ../../../tasks/php-service.yaml
+
+- name: ensure {{nginx_confd_path}} exist
+  file: path={{nginx_confd_path}} state=directory owner=evans group=www-data mode=755
+
+- name: nginx tw-anjuke file
+  template: src=tw.anjuke.com.conf dest={{nginx_confd_path}}tw.anjuke.com.conf
+         owner=evans group=www-data mode=644
+  notify: restart nginx
+
+- name: nginx tw-aifcdn file
+  template: src=tw.aifcdn.com.conf dest={{nginx_confd_path}}tw.aifcdn.com.conf
+         owner=evans group=www-data mode=644
+  notify: restart nginx

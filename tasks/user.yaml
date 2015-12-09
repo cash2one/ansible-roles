@@ -1,0 +1,10 @@
+- name: Ensure the {{user}} user exists
+  user: name={{user}} group=sudo state=present shell="/bin/bash"
+
+- name: Ensure .ssh dir exists
+  file: path=/home/{{user}}/.ssh/ owner={{user}} group=sudo mode=750 state=directory
+
+- name: copy authorized_keys for {{user}}
+  copy: src={{user}}_authorized_keys  dest=/home/{{user}}/.ssh/authorized_keys 
+            owner={{user}} group=sudo mode=644
+    

@@ -1,0 +1,16 @@
+#- name: Ensure apt source list file
+#  copy: src=anjuke.list dest=/etc/apt/sources.list.d/anjuke.list owner=root group=root mode=644 backup=yes
+#
+#- name: apt update
+#  apt: update_cache=yes
+
+- include: apt.yaml
+- include: user_apt.yaml
+- include: php.yaml
+- include: java.yaml
+
+#- name: ensure nginx started
+#  service: name=nginx state=started
+#
+#- name: ensure php-fpm started
+#  service: name=php-fpm state=started

@@ -1,0 +1,15 @@
+/data1/logs/php-fpm/*.log {
+daily
+rotate 5
+missingok
+create
+dateext
+notifempty
+sharedscripts
+postrotate
+    if [ -f /data1/logs/php-fpm/php-fpm.pid ]; then
+        kill -USR1 `cat /data1/logs/php-fpm/php-fpm.pid`
+    fi
+endscript
+}
+

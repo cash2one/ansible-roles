@@ -1,0 +1,320 @@
+location ~* ^/cy/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ank/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/yx/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/qin/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/shz/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/zi/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/yili/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/liang/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/bygl/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ms/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/qing/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/chao/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/xuan/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ba/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/hong/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/sd/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/zk/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/suz/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/zhq/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/song/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/yq/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ka/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/tian/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/es/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/shuy/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/yanan/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/guang/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/lps/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/mz/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ans/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/jq/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/bycem/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/wn/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/szs/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/zjj/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/suiz/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ez/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/boz/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/hami/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/xiann/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/wuhai/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ying/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ws/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/cx/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/ch/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/klmy/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/xam/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/wuwei/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/yanb/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/jixi/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/jiy/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/th/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/xinyu/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/shuo/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/wlcb/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/by/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/sw/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/bc/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/heg/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/liaoy/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/zc/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/pe/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/hlbe/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}
+location ~* ^/yf/?$ {
+    if ($cookie_ANJUKE_PHP_VERSION_USER ~ "beta"){
+        rewrite . /index.php last;
+    }
+}

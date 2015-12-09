@@ -1,0 +1,29 @@
+- hosts: nginx
+  vars_files:
+        - /home/www/userops/ansible-env/env_var.yaml
+  remote_user: evans
+  tasks:
+    - name: ensure {{nginxpath}} exist
+      file: path={{nginxpath}} state=directory owner=evans group=www-data mode=755
+    - name: Ensure anjuke nginx sync
+      synchronize: src={{localpath}}/anjuke/templates/ dest={{nginxpath}}/
+    - name: Ensure include nginx sync
+      synchronize: src={{localpath}}/include/templates/ dest={{nginxpath}}/
+    - name: Ensure user nginx sync
+      synchronize: src={{localpath}}/user/templates/ dest={{nginxpath}}/
+    - name: Ensure pages nginx sync
+      synchronize: src={{localpath}}/pages/templates/ dest={{nginxpath}}/
+    - name: Ensure site-api nginx sync
+      synchronize: src={{localpath}}/site-api/templates/ dest={{nginxpath}}/
+    - name: Ensure api nginx sync
+      synchronize: src={{localpath}}/api/templates/ dest={{nginxpath}}/
+    - name: Ensure anjuke-zu nginx sync
+      synchronize: src={{localpath}}/anjuke-zu/templates/ dest={{nginxpath}}/
+    - name: Ensure anjuke-jp nginx sync
+      synchronize: src={{localpath}}/anjuke-jp/templates/ dest={{nginxpath}}/
+    - name: Ensure touchweb nginx sync
+      synchronize: src={{localpath}}/touchweb/templates/ dest={{nginxpath}}/
+    - name: Ensure member nginx sync
+      synchronize: src={{localpath}}/member/templates/ dest={{nginxpath}}/
+    - name: restart other nginx
+      service: name=nginx state=reloaded
